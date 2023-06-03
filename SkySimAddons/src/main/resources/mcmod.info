@@ -1,0 +1,16 @@
+[
+{
+  "modid": "SkySimAddons",
+  "name": "SkySimAddons",
+  "description": "Addons for skysim made by unjoinable.",
+  "version": "${version}",
+  "mcversion": "1.8.9",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["unjoinable"],
+  "credits": "Mod made by unjoinable",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
