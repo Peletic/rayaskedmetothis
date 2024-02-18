@@ -31,11 +31,13 @@ public class SkySimAddons {
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) throws IOException {
         System.out.println("good morning");
-    SkySimAddons.instance = this;
-        SkySimAddons.container.register(new NTerminatorDelay(), new BasicCategory());
+        container = new ModuleContainer();
+        instance = this;
+        container.register(new NTerminatorDelay(), new BasicCategory());
         (SkySimAddons.commandManager = new CommandManager()).register(new TestCMD());
         SkySimAddons.commandManager.reg();
-        MinecraftForge.EVENT_BUS.register((Object)this);
+        MinecraftForge.EVENT_BUS.register(this);
+
     }
     @SubscribeEvent
     public void tick(final TickEvent.ClientTickEvent event) {
